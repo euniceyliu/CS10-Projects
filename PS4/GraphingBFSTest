@@ -1,0 +1,18 @@
+The test graph:
+Vertices: [Bob, Alice, Charlie, Nobody, Nobody's Friend, Kevin Bacon, Dartmouth (Earl thereof)]
+Out edges: {Bob={Alice=[A movie], Charlie=[C movie], Kevin Bacon=[A movie]}, Alice={Bob=[A movie], Charlie=[D movie], Kevin Bacon=[A movie, E movie]}, Charlie={Bob=[C movie], Alice=[D movie], Dartmouth (Earl thereof)=[B movie]}, Nobody={Nobody's Friend=[F movie]}, Nobody's Friend={Nobody=[F movie]}, Kevin Bacon={Bob=[A movie], Alice=[A movie, E movie]}, Dartmouth (Earl thereof)={Charlie=[B movie]}}
+
+The shortest path tree:
+Vertices: [Bob, Alice, Charlie, Kevin Bacon, Dartmouth (Earl thereof)]
+Out edges: {Bob={Kevin Bacon=[A movie]}, Alice={Kevin Bacon=[A movie, E movie]}, Charlie={Bob=[C movie]}, Kevin Bacon={}, Dartmouth (Earl thereof)={Charlie=[B movie]}}
+
+The path from Alice to the center:
+[Alice, Kevin Bacon]
+
+The vertices  missing from the shortest path tree:
+[Nobody, Nobody's Friend]
+
+The average separation is:
+1.75
+
+Process finished with exit code 0

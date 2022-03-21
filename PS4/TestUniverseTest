@@ -1,0 +1,51 @@
+/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52562:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/user/Documents/IdeaProjects/cs10/libs/opencv/opencv.jar:/Users/user/Documents/IdeaProjects/cs10/libs/opencv/javacv.jar:/Users/user/Documents/IdeaProjects/cs10/libs/opencv/openblas-macosx-x86_64.jar:/Users/user/Documents/IdeaProjects/cs10/libs/opencv/opencv-macosx-x86_64.jar:/Users/user/Documents/IdeaProjects/cs10/libs/opencv/json-simple-1.1.1.jar:/Users/user/Documents/IdeaProjects/cs10/out/production/cs10 KevinBaconGame
+Commands:
+c <#>: list top (positive number) or bottom (negative) <#> centers of the universe, sorted by average separation
+d <low> <high>: list actors sorted by degree, with degree between low and high
+i: list actors with infinite separation from the current center
+p <name>: find path from <name> to current center of the universe
+s <low> <high>: list actors sorted by non-infinite separation from the current center, with separation between low and high
+u <name>: make <name> the center of the universe
+q: quit game
+Kevin Bacon game >
+c 1
+[Dartmouth (Earl thereof)]
+Kevin Bacon game >
+c -1
+[Charlie]
+Kevin Bacon game >
+c -9
+There are only 7 actors in the universe. Please enter a number that is below 7
+Kevin Bacon game >
+d 1 5
+[Nobody, Nobody's Friend, Dartmouth (Earl thereof), Kevin Bacon, Bob, Alice, Charlie]
+Kevin Bacon game >
+d 2 300
+There are only 7 actors in the universe. Please enter an appropriate boundary.
+Kevin Bacon game >
+i
+[Nobody, Nobody's Friend]
+Kevin Bacon game >
+p Alice
+Alice's number is 1
+Alice appeared in [A movie, E movie] with Kevin Bacon
+Kevin Bacon game >
+p Eunice
+Actor unknown
+Kevin Bacon game >
+s 1 4
+The actors sorted by non-finite separation from Kevin Bacon with separation between 1 and 4 are:
+[Bob, Alice, Charlie, Dartmouth (Earl thereof)]
+Kevin Bacon game >
+s 0 80
+There are only 7 actors in the universe. Please enter an appropriate boundary.
+Kevin Bacon game >
+u Kevine
+Actor unknown
+Kevin Bacon game >
+u Bob
+Bob is now the center of the universe, connected to 4/7 actor(s) with average separation 1.25
+Bob game >
+q
+
+Process finished with exit code 0
