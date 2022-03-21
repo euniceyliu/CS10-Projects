@@ -1,0 +1,5 @@
+the/DET dog/N saw/V trains/N in/P the/DET night/N ./. 
+my/PRO watch/N glows/V in/P the/DET night/N ./. 
+his/PRO work/N is/V to/P bark/V in/P a/DET cave/N ./. 
+i/PRO watch/V your/PRO dog/N for/P money/N ./. 
+my/PRO dog/N trains/V to/P bark/V ./. 
