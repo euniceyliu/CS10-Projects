@@ -1,0 +1,23 @@
+﻿In DotTreeGUI, we created a new test2() to ensure that our methods size(), insert(), and allPoints() for PointQuadTree work properly and the relevant methods in DotTreeGUI work properly. What test2() does is to create a tree and do searches .
+
+
+private void test2() {
+  found = null;
+  tree = new PointQuadtree<Dot>(new Dot(300,400), 0,0,800,600); // start with A
+  tree.insert(new Dot(250,550)); // C
+  tree.insert(new Dot(500,125)); // G
+  tree.insert(new Dot(700,550)); // K
+
+
+  int bad = 0;
+  bad += testFind(0,0,900,4,4,4); // rect for all; circle for all; find all
+  bad += testFind(150,450,200,4,4,2);    // rect for all; circle for all; find C and G
+  bad += testFind(750,550,10,4,2,0); // rect for all; circle for K and C; find none
+  if (bad==0) System.out.println("test 2 passed!");
+}
+
+
+For DotTreeGUI, we added dots A, C, G, and K. We tested using a point in the leftmost corner and expected to hit all the points. We tested with a point in the second quadrant, with a large radius and expected it to hit just C and G, not K or A, but still be able to touch their circles and rectangles due to its large radius. We also tested with a point in the fourth quadrant and expected to not hit any point since it had a small radius, but still have its circle intersect C and K.
+
+
+In CollisionGUI, when we pressed c and observed that when the two black blobs collided, they will turn into red because they become “colliders” as we specified in our code. We also tested to see if our code runs well by pressing d. The existing blobs after colliding with each other does disappear, which confirm the removeall method.
