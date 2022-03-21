@@ -5,7 +5,7 @@ Code to build a webcam-based painting program that allow users to choose which p
 ## PS2
 Code to create customized point quadtree and apply it to quickly find the designated objects near the mouse press and detect objects that collide. 
 ## PS3
-Code for Huffman Encoding.
+Code to implement Huffman Encoding.
 ## PS4
 Code to implement social network analysis with examples of different sample tests. 
 ## PS5
